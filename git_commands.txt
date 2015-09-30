@@ -1,0 +1,64 @@
+git status // always check the current status
+git init // initialize this directory as the working place
+git status // recheck the "init" results
+git add <filename> // add files to be staged 
+git commit
+git diff <filename> // see the changed differences of files
+git commit -a // commit all the files
+git commit -a -m "<message content>" // add in the message
+git log
+git show <commit ID from "git log"> // show the changes of the specific commit
+git clone <URL> // fetch the wanted protocals
+git remote -v // verify the new remote URL
+git push // push the local contents to remote
+git pull // pull from the remote
+****************************************************************************
+****************************************************************************
+git branch <branchname>
+git checkout <branchname> // switch
+git checkout -b <branchname> // build a new branch and switch to it
+git merge <branchname> // merch <branchname> with the current one
+git branch -d <branchname> // delete
+****************************************************************************
+****************************************************************************
+LOCAL REPOSITORIES:
+CREATE:
+git init
+
+MODIFY:
+git add
+git commit
+git mv
+git rm
+
+INSPECT:
+git log
+git status
+git diff
+git show(last comment)
+****************************************************************************
+****************************************************************************
+
+REMOTE REPOSITORIES:
+COPY:
+git clone
+
+RECEIVE CHANGES:
+git pull
+
+SEND CHANGES:
+git push 
+****************************************************************************
+****************************************************************************
+
+PUSH LOCAL REPOS TO REMOTE:
+create new repo in github
+git init // in the local repo
+git add . 
+git commit -m ‘fist commit’
+
+git remote add origin <remote repo URL>
+git remote -v 
+
+git push origin master // when push, origin helps avoid typing URL
+ 
