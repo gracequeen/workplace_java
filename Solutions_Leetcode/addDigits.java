@@ -7,20 +7,8 @@
 
 public class addDigits{
 	public static int addDigits(int num) {
-		/*
-		int mod = 10;
-		int sum = 0;		
-		// if only one digit, num / 10 = 0
-		while (num / 10 != 0) {
-			sum = (num / mod) + (num % mod);
-			num = sum;
-			mod *= 10;
-		}
-        return 0;
-        */
         while(num>9) num = num/10+num%10;
-
-    return num;
+		return num;
 
 	}
 
