@@ -19,7 +19,14 @@ Explanation:
 
 public class findTheDifference {
 	public char findTheDifference(String s, String t) {
-        
+        char temp = 0;
+        for (int i = 0; i < s.length(); i++) {
+        	temp ^= s.charAt(i);
+        	temp ^= t.charAt(i);
+        }
+
+        temp ^= t.charAt(t.length() - 1);
+        return temp;
     }
 
     public static void main(String[] args) {
